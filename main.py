@@ -23,7 +23,7 @@ def remove_background():
         input = Image.open(filename)
         # Process the image to remove background
         output = remove(input)
-        output_filename = os.path.join('output', f"processed_{file.filename}")
+        output_filename = os.path.join('output',"processed_{}".format(file.filename))
         output.save(output_filename)
 
 
