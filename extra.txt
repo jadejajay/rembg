@@ -1,0 +1,222 @@
+channel info
+curl \
+  'https://youtube.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cid&mine=true&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+
+AIzaSyAZOmV7fUE7Hcw4mEio5rjyo2dtzrl_sg0
+search
+curl \
+  'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=carryminaty&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+curl \
+  'https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=be%20second%20semester%20basic%20electronics&key=[YOUR_API_KEY]' \
+  --header 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' \
+  --header 'Accept: application/json' \
+  --compressed
+
+https://onnxruntime.ai/docs/install/
+https://www.gradio.app/guides/quickstart
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+PL3qvHcrYGy1uF5KAGntUITTJ85Dm3Dtdy
+UEwzcXZIY3JZR3kxdUY1S0FHbnRVSVRUSjg1RG0zRHRkeS41NkI0NEY2RDEwNTU3Q0M2
+icrAf1us2IQ
+UCPSjwR2s3TVCcdFGrBqMS2g
+heroku api
+7bfd8dea-ddf4-40c1-9e26-46a83415f809
+ngrok authentiicator 
+KRVJJCSQUE
+BHS56T53NS
+J27A6CNVND
+97Q7VZE2GF
+WJVMU3QTJU
+EBFH7MCSCR
+V68C2F9HM9
+MH2XN42S72
+94MZ6HXFE7
+U8MDVP66H4
+ngrok config add-authtoken 1m5wApfmpdtKZnqOEp6UTfeR1Wh_6MF3pp2KTYs3kmjSzDeZp
+D id api key
+amFkZWphamF5ZGV2c2luaDA0QGdtYWlsLmNvbQ:PHdKIGvw00Wl6ZkWMjx1z
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Platform specific widgets
+     Scaffold
+     AppBar
+     BottomNavigationBar
+     TabBar
+     TabBarView
+     ListTile
+     RaisedButton
+
+Layout widgets
+    Container − A rectangular box decorated using BoxDecoration widgets with background, border and shadow.
+    Center − Center its child widget.
+    Row − Arrange its children in the horizontal direction.
+    Column − Arrange its children in the vertical direction.
+    Stack − Arrange one above the another.
+
+State maintenance widgets
+    In Flutter, all widgets are either derived from StatelessWidget or StatefulWidget
+
+Platform independent / basic widgets
+    Text
+        constructor
+           Text widget has a special constructor, Text.rich, which accepts the child of type TextSpan 
+        important properties 
+           maxLines, int − Maximum number of lines to show
+           overflow, TextOverFlow − Specify how visual overflow is handled using TextOverFlow class
+           style, TextStyle − Specify the style of the string using TextStyle class
+           textAlign, TextAlign − Alignment of the text like right, left, justify, etc., using TextAlign class
+           textDirection, TextDirection − Direction of text to flow, either left-to-right or right-to-left
+
+    Image
+        constructor
+           Image − Generic image loader using ImageProvider
+           Image.asset − Load image from flutter project’s assets
+           Image.file − Load image from system folder
+           Image.memory − Load image from memory
+           Image.Network − Load image from network
+        important properties
+           image, ImageProvider − Actual image to load
+           width, double − Width of the image
+           height, double − Height of the image
+           alignment, AlignmentGeometry − How to align the image within its bounds
+
+    Icon
+
+Single Child Widgets
+    Padding − Used to arrange its child widget by the given padding. Here, padding can be provided by EdgeInsets class.
+    Align − Align its child widget within itself using the value of alignment property. The value for alignment property can be provided by FractionalOffset class. The FractionalOffset class specifies the offsets in terms of a distance from the top left.
+    FittedBox − It scales the child widget and then positions it according to the specified fit.
+    FractionalOffset(1.0, 0.0) represents the top right.
+    AspectRatio − It attempts to size the child widget to the specified aspect ratio
+    ConstrainedBox
+    Baseline
+    FractinallySizedBox
+    IntrinsicHeight
+    IntrinsicWidth
+    LiimitedBox
+    OffStage
+    OverflowBox
+    SizedBox
+    SizedOverflowBox
+    Transform
+    CustomSingleChildLayout
+
+Multiple Child Widgets
+    Row − Allows to arrange its children in a horizontal manner.
+    Column − Allows to arrange its children in a vertical manner.
+    Stack − Stack based widget.
+    ListView − Allows to arrange its children as list.
+    GridView − Allows to arrange its children as gallery.
+    Expanded − Used to make the children of Row and Column widget to occupy the maximum possible area.
+    Table − Table based widget.
+    Flow − Flow based widget.
+
+gestures 
+    Tap
+        onTapDown
+        onTapUp
+        onTap
+        onTapCancel
+    Double tap
+        onDoubleTap
+    Long press
+        onLongPress
+    Vertical drag
+        onVerticalDragStart
+        onVerticalDragUpdate
+        onVerticalDragEnd
+    Horizontal drag
+        onHorizontalDragStart
+        onHorizontalDragUpdate
+        onHorizontalDragEnd
+    Pan
+        onPanStart
+        onPanUpdate
+        onPanEnd
+
+Dismissible − Supports flick gesture to dismiss the widget.
+Draggable − Supports drag gesture to move the widget.
+LongPressDraggable − Supports drag gesture to move a widget, when its parent widget is also draggable.
+DragTarget − Accepts any Draggable widget
+IgnorePointer − Hides the widget and its children from the gesture detection process.
+AbsorbPointer − Stops the gesture detection process itself and so any overlapping widget also can not able to participate in the gesture detection process and hence, no event is raised.
+Scrollable − Support scrolling of the content available inside the widget.
+
+Animation
+    Animation<double> − interpolate values between two decimal number
+    Animation<Color> − interpolate colors between two color
+    Animation<Size> − interpolate sizes between two size
+    AnimationController − Special Animation object to control the animation itself. It generates new values whenever the application is ready for a new frame. It supports linear based animation and the value starts from 0.0 to 1.0
+CurvedAnimation
+    controller = AnimationController(duration: const Duration(seconds: 2), vsync: this); 
+    animation = CurvedAnimation(parent: controller, curve: Curves.easeIn)
+Tween
+    AnimationController controller = AnimationController( duration: const Duration(milliseconds: 1000), vsync: this);
+    Animation<int> customTween = IntTween(begin: 0, end: 255).animate(controller);
+
+    AnimationController controller = AnimationController(duration: const Duration(milliseconds: 500), vsync: this); 
+    final Animation curve = CurvedAnimation(parent: controller, curve: Curves.easeOut); 
+    Animation<int> customTween = IntTween(begin: 0, end: 255).animate(curve);
+custom animated widget 
+    class MyAnimatedWidget extends StatelessWidget { 
+   MyAnimatedWidget({this.child, this.animation}); 
+   final Widget child; 
+   final Animation<double> animation; 
+ 
+   Widget build(BuildContext context) => Center( 
+      child: AnimatedBuilder(
+         animation: animation, 
+         builder: (context, child) => Container( 
+            child: Opacity(opacity: animation.value, child: child), 
+         ), 
+         child: child
+      ), 
+   ); 
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+https://flutterawesome.com/a-more-flexible-version-of-flutters-colorscheme-fromseed/
+https://pub.dev/packages/ffmpeg_kit_flutter
+https://www.useblackbox.io/chat
+https://shotstack.io/product/video-editing-api/
+https://www.banuba.com/technology/background-subtraction
+https://medium.com/@akpatel5129/server-driven-ui-in-flutter-an-experiment-on-remote-widgets-652ea2cb3d4b
+https://levelup.gitconnected.com/server-driven-ui-implementation-from-scratch-in-flutter-part-1-basics-71364ddd323e
+https://danielllewellyn.medium.com/in-this-article-im-going-to-demonstrate-a-way-of-driving-the-ui-of-flutter-from-the-backend-43478b46e202
+https://flutterawesome.com/a-server-driven-ui-library-for-flutter/
+https://pub.dev/packages/server_driven_ui
+https://flutterawesome.com/marketky-a-free-flutter-e-commerce-app-starter-template/
+https://pub.dev/packages/camera
+https://blog.logrocket.com/flutter-camera-plugin-deep-dive-with-examples/
+https://fluttergems.dev/camera/
+https://www.waldo.com/blog/flutter-camera
+https://instaflutter.com/flutter-tutorials/flutter-camera/
+https://dev.to/bishopeze/building-a-camera-app-with-flutter-and-the-camera-package-4i15
+http://semantic-portal.net/flutter-cookbook-plugins-use-the-camera
+https://codesundar.com/flutter-camera-example/
+https://www.kodeco.com/4333657-using-the-camera-on-flutter
+https://medium.flutterdevs.com/camera-plugin-with-image-cropper-flutter-97b76105857e
+https://pub.dev/packages/sqflite
+https://pub.dev/packages/sqflite_sqlcipher
+https://calbizjournal.com/tag/apis/
+https://stackoverflow.com/questions/10751227/remove-image-background-with-php-and-save-transparent-png
+https://trello.com/b/wxSMZP1H/flutter-starter
+https://www.geeksforgeeks.org/flutter-carousel-slider/
+https://github.com/nixrajput/flutter_carousel_widget/tree/master
+https://www.fluttercampus.com/packages/86/carousel-slider/
+https://pub.dev/packages/carousel_slider
+https://www.geeksforgeeks.org/flutter-adding-3d-objects/
+https://docs.quickblox.com/docs/react-native-chat-offline-messaging
+https://trac.ffmpeg.org/wiki/Encode/YouTube
+https://pub.dev/packages/on_image_matrix
+https://fluttergems.dev/edit-save-compress-multimedia/
+https://flutterawesome.com/tag/file-manager/
+https://playgroundai.com/
+https://elevenlabs.io/
+https://voicemaker.in/
